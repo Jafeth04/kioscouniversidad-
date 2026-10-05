@@ -40,7 +40,7 @@ jobs:
         run: npm run build
 
       - name: Copiar la web al proyecto Android
-        run: npx cap sync android
+        run: npx cap copy android
 
       - name: Compilar el APK (debug, instalable)
         working-directory: web-admin/android
